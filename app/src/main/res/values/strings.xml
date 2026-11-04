@@ -1,3 +1,14 @@
+<!-- Este fichero almacena textos de la aplicación, como puede ser el nombre de esta,
+los campos del usuario y la contraseña, el botón de validar, los mensajes de error y
+los títulos y descripciones de las tarjetas -->
 <resources>
     <string name="app_name">PracticaEvaluable2Claudia</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="boton_validar">Validar</string>
+    <string name="mensaje_error">Usuario o contraseña incorrectos</string>
+    <string name="titulo_card1">Primera tarjeta</string>
+    <string name="descripcion_card1">Aquí va la información del primer elemento.</string>
+    <string name="titulo_card2">Segunda tarjeta</string>
+    <string name="descripcion_card2">Aquí va la información del segundo elemento.</string>
 </resources>
