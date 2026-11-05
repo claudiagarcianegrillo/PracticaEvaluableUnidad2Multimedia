@@ -7,8 +7,10 @@ los títulos y descripciones de las tarjetas -->
     <string name="password">Contraseña</string>
     <string name="boton_validar">Validar</string>
     <string name="mensaje_error">Usuario o contraseña incorrectos</string>
-    <string name="titulo_card1">Primera tarjeta</string>
-    <string name="descripcion_card1">Aquí va la información del primer elemento.</string>
-    <string name="titulo_card2">Segunda tarjeta</string>
-    <string name="descripcion_card2">Aquí va la información del segundo elemento.</string>
+    <string name="titulo_card1">Limpieza Facial</string>
+    <string name="descripcion_card1">Elimina impurezas y prepara la piel para el tratamiento diario</string>
+    <string name="titulo_card2">Hidratación</string>
+    <string name="descripcion_card2">Aporta agua y mantiene la barrera cutánea suave y luminosa</string>
+    <string name="titulo_card3">Protección Solar</string>
+    <string name="descripcion_card3">Bloquea los rayos UV y previene el envejecimiento prematuro</string>
 </resources>
