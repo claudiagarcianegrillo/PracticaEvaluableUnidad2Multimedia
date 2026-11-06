@@ -48,13 +48,17 @@ class LoginActivity : AppCompatActivity() {
                 intent.putExtra("usuario", usuario)
                 intent.putExtra("password", password)
 
+                // Lanzamos la pantalla principal
                 startActivity(intent)
+
+                /* Cerramos el login para que el botón de desconectarse no vuelva a él, si no
+                que te tengas que registrar de nuevo */
+                finish()
             } else {
                 /* Si las credenciales no coinciden se mostrará este mensaje en la pantalla
                 con el aviso que tenemos en el fichero strings.xml, es decir, este error
                 'Usuario o contraseña incorrectos' */
-                Toast.makeText(this, getString(R.string.mensaje_error), Toast.LENGTH_SHORT).show()
-            }
+                Toast.makeText(this, getString(R.string.mensaje_error), Toast.LENGTH_SHORT).show()            }
         }
     }
 }

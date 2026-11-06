@@ -8,7 +8,7 @@ import android.content.Intent
 
 class PrincipalActivity : AppCompatActivity() {
 
-    // Declaramos la variable para el campo de texto de bienvenida
+    // Declaramos las variables para el campo de texto de bienvenida
     private lateinit var textoDatos: TextView
     private lateinit var btnDesconectar: Button
 
@@ -28,21 +28,17 @@ class PrincipalActivity : AppCompatActivity() {
         // Mostramos un mensaje de bienvenida personalizado con el usuario recibido
         // Siempre que el usuario sea diferente a nulo o a vacío entrará
         if (!usuario.isNullOrEmpty()) {
-            textoDatos.text = "¡Hola, $usuario! Aquí tienes una rutina de Skincare"
+            textoDatos.text = getString(R.string.saludo, usuario)
         } else {
 
-            /* Esto es un mensaje por defecto en caso */
-            textoDatos.text = "¡Bienvenid@ a LumiSkin!"
+            /* Esto es un mensaje por defecto en caso que lo coge del strings.xml*/
+            textoDatos.text = getString(R.string.bienvenida_defecto)
         }
 
         // Botón de desconectarse
         btnDesconectar.setOnClickListener {
             // Creamos el Intent para ir a LoginActivity
             val intent = Intent(this, LoginActivity::class.java)
-
-             /* Esto sirve para borra el historial para que, si le dan al botón
-             "atrás" del móvil, no vuelvan a entrar aquí */
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
 
             // Iniciamos la actividad de inicio de sesión
             startActivity(intent)

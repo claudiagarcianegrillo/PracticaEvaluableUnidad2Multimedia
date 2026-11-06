@@ -7,6 +7,11 @@ los títulos y descripciones de las tarjetas -->
     <string name="password">Contraseña</string>
     <string name="boton_validar">Validar</string>
     <string name="mensaje_error">Usuario o contraseña incorrectos</string>
+
+    <string name="titulo_principal">Skincare</string>
+    <string name="saludo">¡Hola, %1$s! Aquí tienes una rutina de Skincare</string>
+    <string name="bienvenida_defecto">¡Bienvenid@ a LumiSkin!</string>
+    <string name="boton_desconectar">Desconectarse</string>
     <string name="titulo_card1">Limpieza Facial</string>
     <string name="descripcion_card1">Elimina impurezas y prepara la piel para el tratamiento diario</string>
     <string name="titulo_card2">Hidratación</string>
